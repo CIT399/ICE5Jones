@@ -41,7 +41,7 @@ public final class OverflowExercise
 	}	
 	
 	private static void tryDeposit(short acctBal) {
-		if(acctBal > Short.MAX_VALUE){
+		if(acctBal > Short.MAX_VALUE){ // this can never be true -- it can never be more than the max value... not a good check!! You can see if it is less than the deposit -- that would mean an overflow has occurred!
 			throw new ArithmeticException("Integer Overflow");
 		}
 		else
