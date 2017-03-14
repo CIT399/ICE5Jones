@@ -20,8 +20,9 @@ public final class ModulusExercise
 	{
 		while(a<0){
 			a+=p;
-			return a%p;
+			//return a%p;
 		}
+		return a%p; // move to here -- may take several iterations above before you have a positive value
 		if(b == 0)
 		{
 			return 1;   // a^0 = 1 for all a
